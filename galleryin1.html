@@ -1,158 +1,211 @@
-<!DOCTYPE html><!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Mon Sep 12 2016 07:02:24 GMT+0000 (UTC) -->
-<html data-wf-domain="template-newport.webflow.io" data-wf-page="560daf017c013d4a3ee67a6b"
-    data-wf-site="560dac41760760493e6cfc36">
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/img/82-826639_bike-icon-clip-art-sport-icon-white-png.png" rel="shortcut icon" type="image/x-icon">
+    <link href="/img/82-826639_bike-icon-clip-art-sport-icon-white-png.png" rel="apple-touch-icon">
+<style>
+    body {
+        font-family: Arial;
+        margin: 0;
+    }
 
-<head>
-    <meta charset="utf-8">
-    <title>Photo Albums</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="Webflow" name="generator">
-    <link
-        href="/css/gallery.css"
-        rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
-    <script type="text/javascript">WebFont.load({
-            google: {
-                families: ["Montserrat:400,700", "Roboto:300,regular,500"]
-            }
-        });</script>
-    <script src="https://daks2k3a4ib2z.cloudfront.net/0globals/modernizr-2.7.1.js" type="text/javascript"></script>
-    <link href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <link href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png" rel="apple-touch-icon">
-</head>
+    * {
+        box-sizing: border-box;
+    }
+
+    img {
+        vertical-align: middle;
+    }
+
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+        position: relative;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+        cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+    .centre {
+          display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 75px;
+  width: 80%;
+    }
+    /* Container for image text */
+    .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Six columns side by side */
+    .column {
+        float: left;
+        width: 16.66%;
+    }
+
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+        opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+</style>
 
 <body style="background-color: black;">
-    <div style="background-color: black;" class="navigation-bar w-nav" data-animation="default" data-collapse="medium" data-contain="1"
-        data-duration="400">
-        <div class="w-container"><a class="brand-link w-nav-brand" href="/">
-                <h1 class="brand-text" style="color: white;">NEWPORT</h1>
-            </a>
-            <nav class="navigation-menu w-nav-menu" role="navigation"><a class="navigation-link w-nav-link"
-                    href="/">Gallery</a><a class="navigation-link w-nav-link" href="/blog">Blog</a><a
-                    class="navigation-link w-nav-link" href="/about">About</a></nav>
-            <div class="hamburger-button w-nav-button">
-                <div class="w-icon-nav-menu"></div>
+
+    <h2 style="text-align:center; color: white;">ALL INDIA SEVENS FOOTBALL TOURNAMENT</h2>
+
+    <div class="container">
+        
+
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img class="centre" src="/img/IMG_8136.JPG" style="width:70%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img class="centre" src="/img/IMG_8130.JPG" style="width:70%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img class="centre" src="/img/IMG_1451.JPG" style="width:70%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img class="centre" src="/img/IMG_1448.JPG" style="width:70%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img class="centre" src="/img/IMG_1433.JPG" style="width:70%">
+        </div>
+<div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img class="centre" src="/img/IMG_1367.JPG" style="width:70%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+       
+
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="/img/IMG_8136.JPG" style="width:100%" onclick="currentSlide(1)"
+                    alt="">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/img/IMG_8130.JPG" style="width:100%" onclick="currentSlide(2)"
+                    alt="">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/img/IMG_1451.JPG" style="width:100%" onclick="currentSlide(3)"
+                    alt="">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/img/IMG_1448.JPG" style="width:100%" onclick="currentSlide(4)"
+                    alt="">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/img/IMG_1433.JPG" style="width:100%" onclick="currentSlide(5)"
+                    alt="">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="/img/IMG_1367.JPG" style="width:100%" onclick="currentSlide(6)"
+                    alt="">
             </div>
         </div>
     </div>
-    <div style="background-color: black;" class="section">
-        <div class="w-container">
-            <div class="photo-row w-row">
-                <div class="w-col w-col-4">
-                    <h1 class="photo-page-title">Clouds over Ranier</h1>
-                    <div class="photo-info-text">February 3, 2019</div>
-                    <div class="description-text w-richtext" style="color: white;">
-                        <p>A Sevens Football Tournament under the banner Com: E Nayanar Memorial Gold Cup. <br><br> Venue : Thalassery Muncipal Stadium <br></p>
-                    </div>
-                </div>
-                <div class="w-col w-col-8">
-                    <div class="w-richtext">
-                        <figure data-rt-type="image" data-rt-align="fullwidth" data-rt-max-width="100"
-                            class="w-richtext-align-fullwidth" data-rt-max-height="56.25" style="max-width: 100%;">
-                            <div><img
-                                    src="https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c28175ee18143f8592cd_photo-1416934625760-d56f5e79f6fe.jpg">
-                            </div>
-                            <figcaption>Mt Ranier</figcaption>
-                        </figure>
-                        <figure data-rt-type="image" data-rt-align="fullwidth" data-rt-max-width="100"
-                            class="w-richtext-align-fullwidth" data-rt-max-height="56.25" style="max-width: 100%;">
-                            <div><img
-                                    src="https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/562e9a6510d1721d66026dda_photo-1413977886085-3bbbf9a7cf6e.jpg">
-                            </div>
-                            <figcaption>Orange Desert</figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--<div class="all-images w-container">
-            <h1 class="center photo-page-title">ALL PHOTOS</h1>
-            <div class="gallery-wrapper w-dyn-list">
-                <div class="w-dyn-items w-row">
-                    <div class="w-col w-col-4 w-dyn-item"><a class="photo-link-block w-inline-block"
-                            href="/photos/city"><img
-                                sizes="(max-width: 767px) 96vw, (max-width: 991px) 229.328125px, 299.984375px"
-                                src="https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c28256ab04d708d53a8b_photo-1416934625760-d56f5e79f6fe-square700.jpg"
-                                srcset="https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c28256ab04d708d53a8b_photo-1416934625760-d56f5e79f6fe-square700-p-500x.jpeg 500w, https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c28256ab04d708d53a8b_photo-1416934625760-d56f5e79f6fe-square700.jpg 700w">
-                            <div class="title">Clouds over Ranier</div>
-                        </a></div>
-                    <div class="w-col w-col-4 w-dyn-item"><a class="photo-link-block w-inline-block"
-                            href="/photos/together"><img
-                                sizes="(max-width: 767px) 96vw, (max-width: 991px) 229.328125px, 299.984375px"
-                                src="https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c2ab75ee18143f8592dd_photo-1427955569621-3e494de2b1d2-square700.jpg"
-                                srcset="https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c2ab75ee18143f8592dd_photo-1427955569621-3e494de2b1d2-square700-p-500x.jpeg 500w, https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c2ab75ee18143f8592dd_photo-1427955569621-3e494de2b1d2-square700.jpg 700w">
-                            <div class="title">White Frost</div>
-                        </a></div>
-                    <div class="w-col w-col-4 w-dyn-item"><a class="photo-link-block w-inline-block"
-                            href="/photos/blue"><img
-                                sizes="(max-width: 767px) 96vw, (max-width: 991px) 229.328125px, 299.984375px"
-                                src="https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c2c0d519fb9b019494b6_photo-1428184003419-4cfd6ab3d280-square700.jpg"
-                                srcset="https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c2c0d519fb9b019494b6_photo-1428184003419-4cfd6ab3d280-square700-p-500x.jpeg 500w, https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c2c0d519fb9b019494b6_photo-1428184003419-4cfd6ab3d280-square700.jpg 700w">
-                            <div class="title">Macaw Feathers</div>
-                        </a></div>
-                    <div class="w-col w-col-4 w-dyn-item"><a class="photo-link-block w-inline-block"
-                            href="/photos/coast"><img
-                                sizes="(max-width: 767px) 96vw, (max-width: 991px) 229.328125px, 299.984375px"
-                                src="https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c3dd75ee18143f859309_photo-1444090542259-0af8fa96557e-square700.jpg"
-                                srcset="https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c3dd75ee18143f859309_photo-1444090542259-0af8fa96557e-square700-p-500x.jpeg 500w, https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c3dd75ee18143f859309_photo-1444090542259-0af8fa96557e-square700.jpg 700w">
-                            <div class="title">Burning Clouds</div>
-                        </a></div>
-                    <div class="w-col w-col-4 w-dyn-item"><a class="photo-link-block w-inline-block"
-                            href="/photos/night"><img
-                                sizes="(max-width: 767px) 96vw, (max-width: 991px) 229.328125px, 299.984375px"
-                                src="https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c2f5d519fb9b019494bf_photo-1432251407527-504a6b4174a2-square700.jpg"
-                                srcset="https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c2f5d519fb9b019494bf_photo-1432251407527-504a6b4174a2-square700-p-500x.jpeg 500w, https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c2f5d519fb9b019494bf_photo-1432251407527-504a6b4174a2-square700.jpg 700w">
-                            <div class="title">Pool Ripples</div>
-                        </a></div>
-                    <div class="w-col w-col-4 w-dyn-item"><a class="photo-link-block w-inline-block"
-                            href="/photos/art"><img
-                                sizes="(max-width: 767px) 96vw, (max-width: 991px) 229.328125px, 299.984375px"
-                                src="https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c30ed519fb9b019494c4_photo-1433155327100-12aac6a14ff1-square700.jpg"
-                                srcset="https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c30ed519fb9b019494c4_photo-1433155327100-12aac6a14ff1-square700-p-500x.jpeg 500w, https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c30ed519fb9b019494c4_photo-1433155327100-12aac6a14ff1-square700.jpg 700w">
-                            <div class="title">Yellow Sunset</div>
-                        </a></div>
-                    <div class="w-col w-col-4 w-dyn-item"><a class="photo-link-block w-inline-block"
-                            href="/photos/play"><img
-                                sizes="(max-width: 767px) 96vw, (max-width: 991px) 229.328125px, 299.984375px"
-                                src="https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c326274db8d9082a2725_photo-1433245437947-a0595ee87118-square700.jpg"
-                                srcset="https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c326274db8d9082a2725_photo-1433245437947-a0595ee87118-square700-p-500x.jpeg 500w, https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c326274db8d9082a2725_photo-1433245437947-a0595ee87118-square700.jpg 700w">
-                            <div class="title">Silence</div>
-                        </a></div>
-                    <div class="w-col w-col-4 w-dyn-item"><a class="photo-link-block w-inline-block"
-                            href="/photos/lift"><img
-                                sizes="(max-width: 767px) 96vw, (max-width: 991px) 229.328125px, 299.984375px"
-                                src="https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c351d519fb9b019494d8_photo-1436397543931-01c4a5162bdb-square700.jpg"
-                                srcset="https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c351d519fb9b019494d8_photo-1436397543931-01c4a5162bdb-square700-p-500x.jpeg 500w, https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c351d519fb9b019494d8_photo-1436397543931-01c4a5162bdb-square700.jpg 700w">
-                            <div class="title">Red Wall</div>
-                        </a></div>
-                    <div class="w-col w-col-4 w-dyn-item"><a class="photo-link-block w-inline-block"
-                            href="/photos/dog"><img
-                                sizes="(max-width: 767px) 96vw, (max-width: 991px) 229.328125px, 299.984375px"
-                                src="https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c37d75ee18143f8592ff_photo-1441906363162-903afd0d3d52-square700.jpg"
-                                srcset="https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c37d75ee18143f8592ff_photo-1441906363162-903afd0d3d52-square700-p-500x.jpeg 500w, https://daks2k3a4ib2z.cloudfront.net/560daf0101b66e250aca5197/5614c37d75ee18143f8592ff_photo-1441906363162-903afd0d3d52-square700.jpg 700w">
-                            <div class="title">Blue Foam</div>
-                        </a></div>
-                </div>
-            </div>
-        </div>
-    </div>-->
-    <div class="footer">
-        <div class="w-container">
-            <div><a class="social-icon-link w-inline-block" href="#"><img
-                        src="http://uploads.webflow.com/560dac41760760493e6cfc36/560dac41760760493e6cfc6c_social-03.svg"
-                        width="20"></a><a class="social-icon-link w-inline-block" href="#"><img
-                        src="http://uploads.webflow.com/560dac41760760493e6cfc36/560dac41760760493e6cfc83_social-18.svg"
-                        width="20"></a><a class="social-icon-link w-inline-block" href="#"><img
-                        src="http://uploads.webflow.com/560dac41760760493e6cfc36/560dac41760760493e6cfc5f_social-30.svg"
-                        width="20"></a></div>
-        </div>
-        <div class="footer-text">Powered by Webflow</div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
-    <script src="https://daks2k3a4ib2z.cloudfront.net/560dac41760760493e6cfc36/js/webflow.09f3f3cf9.js"
-        type="text/javascript"></script>
-    <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
 </body>
 
 </html>
