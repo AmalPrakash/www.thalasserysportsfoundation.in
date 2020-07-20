@@ -1,7 +1,7 @@
 # ThalasserySportsFoundation
  A website for thalassery sportsfoundation
  
- Website : [Thalassery Sports Foundation](http://www.thalasserysportsfoundation.in)  or just google Thalassery sports foundation
+ Website : [Thalassery Sports Foundation](http://www.thalasserysportsfoundation.in)  or just google **"Thalassery sports foundation"**
  
  Homepage:-
  
